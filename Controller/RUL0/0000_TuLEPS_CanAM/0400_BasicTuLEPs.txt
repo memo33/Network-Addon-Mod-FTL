@@ -59,6 +59,8 @@ AddTypes     = 0461, 10461, 20461, 30461, 40461, 50461, 60461, 70461 ;RD2-to-ML 
 AddTypes     = 0462, 10462, 20462, 30462, 40462, 50462, 60462, 70462 ;ARD3-to-TL starter
 AddTypes     = 0463, 10463, 20463, 30463, 40463, 50463, 60463, 70463 ;TLA3-to-TL starter
 AddTypes     = 0464, 10464, 20464, 30464, 40464, 50464, 60464, 70464 ;AVE2-to-TL starter
+AddTypes     = 0465, 10465, 20465, 30465, 40465, 50465, 60465, 70465 ;AVE4-to-TL 120 starter
+AddTypes     = 0466, 10466, 20466, 30466, 40466, 50466, 60466, 70466 ;AVE4-to-TL 220 starter
 
 
 
@@ -2737,11 +2739,103 @@ CopyFrom    = 0x30464
 
 
 
+[HighwayIntersectionInfo_0x00000465]
+;Added by Tarkus 2014/01/20
+;AVE4-to-TL starter
+Piece = 0.0, 16.0, 0, 0, 0x5B224005
+;###LHD###Piece = 0.0, 16.0, 0, 1, 0x5B224005
+PreviewEffect = preview_flex_turn_lane_transition_av4_tl
+
+CellLayout=....
+CellLayout=.a.<
+CellLayout=.bc.
+CellLayout=.^..
+
+CheckType = a - avenue: 0x02040200
+CheckType = b - avenue: 0x02040200 street: 0x00000100, 0xffffffff optional
+CheckType = c - avenue: 0x02000204, 0xffffffff optional
+;###LHD###CheckType = a - avenue: 0x02040200, 0xffffffff optional
+;###LHD###CheckType = c - avenue: 0x02000204 street: 0x00000300, 0xffffffff optional
 
 
+ConsLayout=....
+ConsLayout=.+.<
+ConsLayout=....
+ConsLayout=.^..
+
+AutoTileBase=	0x55387000
+ReplacementIntersection = 0, 0
+PlaceQueryID = 0x5B224005
+Costs       = 20
+
+[HighwayIntersectionInfo_0x00010465]
+CopyFrom    = 0x0465
+Rotate		= 1
+[HighwayIntersectionInfo_0x00020465]
+CopyFrom    = 0x0465
+Rotate		= 2
+[HighwayIntersectionInfo_0x00030465]
+CopyFrom    = 0x0465
+Rotate		= 3
+[HighwayIntersectionInfo_0x00040465]
+CopyFrom    = 0x0465
+[HighwayIntersectionInfo_0x00050465]
+CopyFrom    = 0x10465
+[HighwayIntersectionInfo_0x00060465]
+CopyFrom    = 0x20465
+[HighwayIntersectionInfo_0x00070465]
+CopyFrom    = 0x30465
 
 
+[HighwayIntersectionInfo_0x00000466]
+;Added by Tarkus 2014/01/20
+;AVE4-to-TL starter
+Piece = 0.0, 16.0, 0, 0, 0x5B224205
+;###LHD###Piece = 0.0, 16.0, 0, 1, 0x5B224205
+PreviewEffect = preview_flex_turn_lane_transition_av4_t2
 
+CellLayout=....
+CellLayout=.a.<
+CellLayout=.dc.
+CellLayout=.bc.
+CellLayout=.^..
+
+CheckType = a - avenue: 0x02040200
+CheckType = b - avenue: 0x02040200 street: 0x00030100, 0xffffffff optional
+CheckType = c - avenue: 0x02000204, 0xffffffff optional
+CheckType = d - avenue: 0x02040200, 0xffffffff optional
+;###LHD###CheckType = b - avenue: 0x02040200, 0xffffffff optional
+;###LHD###CheckType = c - avenue: 0x02000204 street: 0x00000300, 0xffffffff optional
+
+
+ConsLayout=....
+ConsLayout=.+.<
+ConsLayout=....
+ConsLayout=....
+ConsLayout=.^..
+
+AutoTileBase=	0x55387000
+ReplacementIntersection = 0, 0
+PlaceQueryID = 0x5B224205
+Costs       = 20
+
+[HighwayIntersectionInfo_0x00010466]
+CopyFrom    = 0x0466
+Rotate		= 1
+[HighwayIntersectionInfo_0x00020466]
+CopyFrom    = 0x0466
+Rotate		= 2
+[HighwayIntersectionInfo_0x00030466]
+CopyFrom    = 0x0466
+Rotate		= 3
+[HighwayIntersectionInfo_0x00040466]
+CopyFrom    = 0x0466
+[HighwayIntersectionInfo_0x00050466]
+CopyFrom    = 0x10466
+[HighwayIntersectionInfo_0x00060466]
+CopyFrom    = 0x20466
+[HighwayIntersectionInfo_0x00070466]
+CopyFrom    = 0x30466
 
 
 
