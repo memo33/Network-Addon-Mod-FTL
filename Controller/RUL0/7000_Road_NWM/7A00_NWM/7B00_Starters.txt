@@ -341,8 +341,8 @@ CellLayout =...Z<..
 CellLayout =...a...
 CellLayout =...^...
 
-CheckType = Z - onewayroad: 0x02000200
-CheckType = a - onewayroad: 0x02000200 Rail: 0x00030300, 0xffffffff optional
+CheckType = Z - road: 0x02000200
+CheckType = a - road: 0x02000200 Rail: 0x00030303, 0xffffffff optional
 
 ConsLayout =........
 ConsLayout =...+...<
